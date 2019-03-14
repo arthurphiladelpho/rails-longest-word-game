@@ -29,7 +29,7 @@ class GamesController < ApplicationController
         end
       end
       return {
-        score: ((attempt_chars.length**2) + ((ending - start))),
+        score: ((attempt_chars.length**2) + ((start - ending))),
         message: "well done",
         time: (ending - start)
       }
